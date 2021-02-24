@@ -1,0 +1,20 @@
+.container{
+    background-color: brown;
+}
+
+#um, .dois{
+    width: 100px;
+    height: 100px;
+}
+#um{
+    position: absolute;
+    top:200px;
+    left: 500px;
+    border-radius: 50px;
+    box-shadow: black 1px 1px 10px;
+    transition: 5s;
+}
+.dois{
+    position: fixed;
+    background-color: coral;
+}

@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Heebo', sans-serif;  
+    font-size: 100%;
+}
+nav,ul{list-style: none;}
+a{text-decoration:none;}
+.secoes{
+    padding: 44px 70px;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titulo{
+    width:100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.titulo h2{
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.topo{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color:#f39c12;
+    z-index: 30000;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+.topo i{
+    color:white;
+    font-size:20px;
+}
+.topo.new{
+    background-color:white;
+}
+
+/*HEADER DO PORTIFÓLIO*/
+header{
+    z-index: 100;
+    padding: 10px 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    transition: 0.7s;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+header .logo{ 
+    
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: black;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+}
+nav ul li{
+    margin-left: 10px;
+}
+header nav ul li a{
+    display: block;
+    padding: 7.5px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: black;
+}
+header.sticky{
+    background-color:#f39c12;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.sticky a{
+    color: white;
+}
+
+/*AREA PRINCIPAL DO PORTIFÓLIO*/
+.banner{
+    min-height: calc(100vh - 64px);
+    flex-direction: unset;
+    align-items: center;
+    background: #fff no-repeat url(../images/eu.gif) right ;
+    background-size: 45%;
+}
+.banner .meu-nome h2{
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner .meu-nome h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner .meu-nome h3{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.botao{
+    margin-top: 20px;
+    background-color:#f39c12;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+/*AREA sobre DO PORTIFÓLIO*/
+.conteudo-caixa{
+    flex: 1 1 300px;
+    padding:0px 10px 10px 0px;
+}
+.conteudo-caixa h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.conteudo-caixa p{
+    padding-right: 10x;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+/*AREA servicos DO PORTIFÓLIO*/
+
+.servicos{
+    background-color: #000;
+}
+ .titulo.white, i{
+     color: white;
+ }
+ i{
+     font-size: 50px;
+     margin-bottom: 5px;
+ }
+
+ .servicos .servico-caixa{
+     flex-grow: 1;
+     max-width: 290px ;
+     padding: 40px 20px;
+     background-color: #222;
+     color:#fff;
+     margin:20px;
+     text-align: center;
+     transition: 0.7s;
+ }
+ .servicos .servico-caixa:hover{
+     background-color: #f39c12;
+ }
+ 
+
+ .trabalho-caixa{
+    flex-grow: 1;
+    max-width: 290px;
+    background-color: #222;
+    color:#fff;
+    margin:20px;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.trabalho-caixa img{
+    max-width: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+#testemunho{
+    background-color: black;
+}
+
+.testemunho-caixa{
+    max-width: 400px;
+    padding: 60px 20px;
+    background-color: #222;
+    margin: 20px;
+    box-shadow: 0 5px 20px rgba(99, 98, 98, 0.2);
+    
+}
+.testemunho-caixa p{
+    color:#fff;
+    font-style: italic;
+    font-size:16px;
+    font-weight: 300;
+}
+.testemunho-caixa h3{
+    margin-top:40px;
+    text-align: end;
+    color:#fff;
+    line-height: 1em;
+    font-size:20px;
+    font-weight: 600;
+}
+.testemunho-caixa h3 span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-caixa{
+    min-width: 50%;
+}
+.form-caixa form{
+    display: flex;
+    flex-direction: column;
+
+}
+.form-caixa form h3, .contato-info h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.form-caixa form input, .form-caixa form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 15px;
+    background: #222;
+    color: white;
+    border:none;    
+    outline: none;
+    resize: none;
+}
+.form-caixa form input[type="submit"]
+{
+    max-width: 100px;
+    background-color: #f39c12;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contato-info{
+    min-width: 40%;
+    margin: 0px 30px 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contato-caixa{
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.contato-info i{
+    color: black;
+    font-size: 20px;
+    padding-top:4px;
+    margin-right: 10px;
+}
+.contato-info .text{
+    display: flex;  
+    flex-direction: column;
+    font-weight: 300;
+}
+.copyright{
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
