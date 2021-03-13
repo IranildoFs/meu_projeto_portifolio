@@ -8,7 +8,6 @@
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#-layout">Layout</a> • 
- <a href="#-como-executar-o-projeto">Como executar</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#-autor">Autor</a> • 
 </p>
@@ -34,35 +33,6 @@ Este projeto diz para testar meus conhecimentos na tecnologia de Flex-Box. Foi m
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="pagina3" title="#pagina3" src="./assets/3.png" width="400px">
 </p>
----
-
-## 🚀 Como executar o projeto
-
-Este projeto possui uma pasta:
-
-1. Frontend 
-
-### Pré-requisitos
-
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com)
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
-
-### 🧭 Rodando a aplicação web
-
-```bash
-
-# Clone este repositório
-$ git clone github.com/IranildoFs/gitHub_search_repository.git
-
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd gitHub_search_repository
-
-# Vá para a pasta da aplicação Front End
-$ cd segundo-projeto-react
-
-
-```
 
 ---
 
